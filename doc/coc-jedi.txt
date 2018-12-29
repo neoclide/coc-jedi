@@ -1,0 +1,77 @@
+*coc-jedi.txt*				Jedi support for coc.nvim.
+
+Version: 0.0.1
+Author: Qiming Zhao <chemzqm at gmail.com>
+License: MIT license
+
+CONTENTS					*jedi-contents*
+
+Introduction					|jedi-introduction|
+Requirement					|jedi-requirement|
+Install						|jedi-install|
+Configuration 					|jedi-configuration|
+Commands 					|jedi-commands|
+Links 						|jedi-links|
+
+==============================================================================
+
+INTRODUCTION						*jedi-introduction*
+
+Coc-jedi is a coc extension which provide python language intelligence powered
+by jedi (an awesome autocompletion/static analysis library for Python).
+
+==============================================================================
+
+REQUIREMENT						*jedi-requirement*
+
+coc.nvim requires neovim >= 0.3.0 or vim >= 8.1 to work, check out |:version|
+in your vim.
+
+Python is also required for this extension, but it's required to compile vim
+with python.
+
+Nodejs and yarn is required for compile typescript code to javascript.
+
+This extension works better with python3.
+
+==============================================================================
+
+INSTALL							*jedi-install*
+
+Use plugin manager, like https://github.com/junegunn/vim-plug by add: >
+
+  Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+  Plug 'neoclide/coc-jedi', {'do': 'yarn install'}
+
+to your `init.vim` and run: >
+
+  :PlugInstall
+
+Restart your vim.
+
+Note: the python server would only start when open python file, lazyload of
+this plugin is not necessary.
+
+==============================================================================
+CONFIGURATION 						  *jedi-configuration*
+
+g:python3_host_prog 					*g:python3_host_prog*
+
+			Python interpreter that start jedi server.  When not
+			specified, use `python3` or `python` in $PATH.
+
+==============================================================================
+COMMANDS 						  *jedi-commands*
+
+:CocCommand jedi.restart
+
+			Restart jedi server.
+
+==============================================================================
+LINKS                                                            *jedi-links*
+
+Jedi official site:
+  *https://jedi.readthedocs.io/en/latest/*
+
+==============================================================================
+vim:tw=78:nosta:noet:ts=8:sts=0:ft=help:noet:fen:fdm=marker:

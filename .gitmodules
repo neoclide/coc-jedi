@@ -1,0 +1,8 @@
+[submodule "python/jedi"]
+	path = python/jedi
+	url = https://github.com/davidhalter/jedi.git
+	branch = master
+[submodule "python/parso"]
+	path = python/parso
+	url = https://github.com/davidhalter/parso.git
+	branch = master
