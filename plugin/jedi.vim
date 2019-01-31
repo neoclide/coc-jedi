@@ -1,6 +1,9 @@
 if exists('did_coc_jedi_loaded') || v:version < 700
   finish
 endif
+if !get(g:, 'did_coc_loaded', 0)
+  finish
+endif
 let did_coc_jedi_loaded = 1
 
 let s:folder = expand('<sfile>:h:h')
