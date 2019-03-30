@@ -6,7 +6,8 @@ This plugin start a python server which attached to neovim/vim, and make the
 nodejs part communicate with python server by use notification, it would never
 block your vim.
 
-**Note:** only basic completion working, **don't use it seriously.**
+**Deprecated**, use [coc-python](https://github.com/neoclide/coc-python)
+instead.
 
 ## Install
 
